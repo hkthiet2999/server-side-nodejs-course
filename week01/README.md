@@ -448,3 +448,24 @@ In this task you will create a separate Node module implementing an Express rout
     - Create a Node module named leaderRouter.js that implements the Express router for the /leaders  and /leaders/:leaderId REST API end points.
 
     - Require the Node module you create above within your Express application and mount it on the /leaders route.
+
+
+## Review criteria
+
+- Upon completion of the assignment, your submission will be reviewed based on the following criteria:
+
+<b>Task 1</b>
+
+- The REST API supports GET, PUT, POST and DELETE operations on /dishes/:dishId end point.
+
+<b>Task 2</b>
+
+- The new Node module, promoRouter is implemented and used within your server to support the /promotions end point.
+
+- The REST API supports GET, PUT, POST and DELETE operations on /promotions and GET, PUT, POST and DELETE operations on /promotions/:promoId end points.
+
+<b>Task 3</b>
+
+- The new Node module, leaderRouter is implemented and used within your server to support the /leaders end point.
+
+- The REST API supports GET, PUT, POST and DELETE operations on /leadership and GET, PUT, POST and DELETE operations on /leaders/:leaderId end points.
