@@ -8,6 +8,25 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
 var app = express();
+// routes
+const dishRouter = require('./routes/dishRouter');
+const promoRouter = require('./routes/promoRouter');
+const leaderRouter = require('./routes/leaderRouter');
+// Connect to MongoDB
+const mongoose = require('mongoose');
+const url = 'mongodb://localhost:27017/finalApp-coursera';
+const db = mongoose.connect(url);
+
+db.then((db) => {
+  console.log('Connected correctly to server')
+}, (err) => { console.log(err); });
+
+// use routes
+app.use('/promotions', promoRouter);
+app.use('/leaders', leaderRouter);
+app.use('/dishes', dishRouter);
+
+
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
